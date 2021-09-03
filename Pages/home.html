@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="./home.css">
+	<!--Using-FontAwesome------>
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section>
+		<!--Navigation----->
+		<nav>
+			<!---logo---->
+			<a class="logo" href="../index.html">Shahul Shane</a>
+			<!--menu-->
+			<ul>
+				<li><a href="home.html" class="active">Home</a></li>
+				<li><a href="about.html" class="active">About</a></li>
+				<li><a href="../index.html" class="active">PortFolio</a></li>
+				<li><a href="contact.html" class="active">Contact Us</a></li>
+				
+			</ul>
+			<!--bars----------->
+			<div class="toggle"></div>
+		</nav>
+
+	<div class="center">
+	<p>Web Developer & Designer, Youtuber.</p>
+	</div>
+
+	<!--footer--------------->
+	<footer>
+		<p>Follow me @</p>
+		<!--social------------>
+		<div class="social-icons">
+			<a href="https://www.facebook.com/shahul.shane" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://twitter.com/ShahulShane" target="_blank"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.instagram.com/shahul_shane/" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.youtube.com/channel/UCT4dMQTmc7L_1LnUmoAhYUA" target="_blank"><i class="fab fa-youtube"></i></a>
+	
+		</div>	
+</footer>
+<!--copyright-------->
+<p class="copyright">Copyright &#169 2021 by Shahul Shane</p>
+</section>
+
+
+<!---JQuery-------->
+	<script type="text/javascript" src="../js/JQuery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.toggle').click(function(){
+				$('.toggle').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+		})
+		</script>
+
+</body>
+</html>

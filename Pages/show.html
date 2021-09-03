@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Choose Show</title>
+	<link rel="stylesheet" href="show.css">
+<!--Using-FontAwesome------>
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+<section>
+	<!----Navigation-------->
+	<nav>
+        <!---logo---->
+		<a class="logo">Shahul Shane</a>	
+		<!---Menu---->
+		<span class="wrapper">
+		<ul>
+         <li><a href="index.html" id="home">Home</a></li>
+         <li><a class="active" href="about.html" id="about">About</a></li>
+	<li><a id="port" href="portfolio.html" target="_blank">Portfolio</a></li>
+		<li><a href="contact.html" id="contact">Contact Us</a></li>
+		</ul>
+		</span>
+				<!--bars----------->
+		<div class="toggle"></div>
+    </nav>
+    <!------Fill Form---------->	
+    <p class="fill">Please Fill The Form!</p>
+<!---Choose Show---->
+<div class="awrapper">
+    <div class="contact-me">
+        <div class="input-form">
+            <input type="text" class="input" placeholder="Your Name" maxlength="25" minlength="2"> 
+            <input type="text" class="input" placeholder="Your Place" maxlength="50" minlength="10">
+            <select name="Choose Show" class="show">
+            <option>Choose Show</option>
+            <option>Show1</option>
+            <option>Show2</option>
+            <option>Show3</option>
+            <option>Show4</option>
+        </select>
+        </div>
+        
+        <div class="msg">
+            <textarea placeholder="Your Message Here.." maxlength="150" minlength="0"></textarea>
+            <button class="sub-btn">Submit</button>
+        </div>
+    </div>
+</div>
+    <footer>
+        <p>My Social Media Accounts</p>
+        <!--social------------>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/shahul.shane" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/ShahulShane" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/shahul_shane/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCT4dMQTmc7L_1LnUmoAhYUA" target="_blank"><i class="fab fa-youtube"></i></a>
+    
+        </div>
+        <!--copyright-------->
+        <p class="copyright">Coded By Shahul Shane</p>
+    </footer>
+    <!---JQuery-------->
+<script type="text/javascript" src="../js/JQuery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.toggle').click(function(){
+        $('.toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+    })
+})
+</script>
+    </body>
+    </html>
