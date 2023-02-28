@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+	<link rel="stylesheet" href="about.css">
+<!--Using-FontAwesome------>
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+	<section>
+		<!--Navigation----->
+		<nav>
+			<!---logo---->
+			<a class="logo" href="../Pages/home.html">Shahul Shane</a>
+			<!--menu-->
+			<ul>
+				<li><a href="home.html" class="active">Home</a></li>
+				<li><a href="about.html" class="active">About</a></li>
+				<li><a href="../index.html" class="active">PortFolio</a></li>
+				<li><a href="contact.html" class="active">Contact Us</a></li>
+				
+			</ul>
+			<!--bars----------->
+			<div class="toggle"></div>
+		</nav>
+
+</div>
+<!--services--------->
+<div class="services">
+<!--text------------->
+<div class="services-text">
+	<p>Welcome Everyone</p>
+	<p>If you have visited this site by watching my Youtube videos and if you would like to give new topics, please select the shows on above menu and write your comments.</p>
+</div>
+<!--box---------------->
+<div class="box-container">
+	<!--1----------------->
+	<div class="box-1">
+		<span>1</span>
+		<p class="heading">Web Design & Development</p>
+		<p class="details">You will get a classical website, You can try with young web Designer at low price with best result. Check my Portfolio given in menu section and If you have any project for your business contact me. You can find my Portfolio in the given link below or in the menu.</p>
+		<button><a href="../index.html" target="_blank" id="bot_chan">View Portfolio</a></button>
+	</div>
+	<!--2----------------->	
+	<div class="box-2">
+		<span>2</span>
+		<p class="heading">Youtube</p>
+		<p class="details">I have a youtube channel called Shahul Shane, Just if you are ok with Kannada - South Indian languauge. Just give a visit and see my videos and if you like those videos give a thumbsup and subscribe to my channel.</p>
+		<button><a href="https://www.youtube.com/channel/UCT4dMQTmc7L_1LnUmoAhYUA" target="_blank" id="bot_chan">Visit Channel</a></button>
+	</div>
+	<!--2----------------->
+	<div class="box-3">
+		<span>3</span>
+		<p class="heading">Follow</p>
+		<p class="details">If you are willing to follow me personally, you can visit on my social accounts and get in touch with me. All my social media links given in the bottom of page.</p>
+
+	</div>
+	</div>
+</div>
+</div>
+<!--Footer------->
+<footer>
+	<p>Follow me @</p>
+	<!--social------------>
+	<div class="social-icons">
+		<a href="https://www.facebook.com/shahul.shane" target="_blank"><i class="fab fa-facebook-f"></i></a>
+		<a href="https://twitter.com/ShahulShane" target="_blank"><i class="fab fa-twitter"></i></a>
+		<a href="https://www.instagram.com/shahul_shane/" target="_blank"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.youtube.com/channel/UCT4dMQTmc7L_1LnUmoAhYUA" target="_blank"><i class="fab fa-youtube"></i></a>
+
+	</div>
+</footer>
+	<!--copyright-------->
+	<p class="copyright">Copyright &#169 2021 by Shahul Shane</p>
+</section>
+<!---JQuery-------->
+<script type="text/javascript" src="../js/JQuery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('.toggle').toggleClass('active')
+			$('nav').toggleClass('active')
+		})
+	})
+	</script>
+</body>
+</html>

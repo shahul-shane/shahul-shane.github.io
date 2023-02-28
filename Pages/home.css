@@ -1,0 +1,307 @@
+ul{
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+section{
+	width: 100%;
+	height: 100vh;
+	background-image: url('../Pics/shahul.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	background-color: #FFFFFF;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+	padding: 0px 5%;
+}
+nav ul {
+	display: flex;
+}
+nav ul li a{
+	margin: 30px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: #505050;
+	font-size: 17px;
+	font-weight:bold;
+	}
+.logo{
+	font-family:cursive; 
+	color:#000000;
+	font-size: 22px;
+}
+.active{
+	font-weight: bolder;
+	color: #444343;
+}
+.center{
+	font-size: 50px;	
+	text-align: center;
+}
+
+.wrapper{
+	width: 860px;
+	margin: 0 auto;
+}
+.wrapper ul{
+	list-style: none;
+	margin-top: 2%;
+}
+.toggle{
+	display: none;
+}
+.wrapper ul li {
+	background: black;
+	width: 180px;
+	border: 1px solid #fff;
+	border-radius: 15px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+	color: white;
+	font-size: 15px;
+	position: relative;
+	
+}
+
+.wrapper ul li:hover{
+background: rgb(190, 27, 60);
+}
+.wrapper ul ul{
+	display: none;
+}
+.wrapper ul li:hover > ul{
+	display:block;
+}
+#port{
+	text-decoration: none;
+}
+#about{
+	text-decoration: none;
+}
+#home{
+	text-decoration: none;
+}
+#show{
+	text-decoration: none;
+}
+#contact{
+	text-decoration: none;
+}
+#blog{
+	text-decoration: none;
+}
+.fill{
+	position: absolute;
+	top: 10%;
+	transform: translateY(-50%);
+	left: 34%;
+	font-size: 50px;
+}
+footer{
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+footer p{
+	font-family: 'Times New Roman', Times, serif;
+}
+footer p:nth-child(1){
+font-size: 30px;
+color: #020202;
+line-height: 10px;
+}
+footer p:nth-child(2){
+	font-size: 16px;
+	color: #7e7d7d;
+	width: 600px;
+	text-align: center;
+}
+.social-icons a{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e6e3e3;
+	margin: 20px 10px;
+	border-radius: 50%;
+}
+.social-icons{
+	display: flex;
+}
+.copyright{
+	color: black;
+	font-size: 15px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.social-icons i{
+color: #000000;
+}
+.social-icons a:hover,
+.social-bar a:hover{
+background-color: #000000;
+box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+transition:all ease 0.5s;
+}
+.social-icons a:hover i,
+.social-bar a:hover i{
+color: #FFFFFF;
+transition: all ease 0.5s;
+}
+
+
+@media(max-width:750px)
+	{
+		.me{
+			display: none;
+		}
+		.toggle{
+			display: block;
+		}
+		.text-container p:nth-child(2){
+			line-height: 40px;
+			margin: 0px;
+			padding: 0px;
+		}
+		.text-container{
+			top:50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 80%;
+		}
+		nav ul{
+			margin: 0px;
+			padding: 0px;
+			background-color: #ebeef4;
+			flex-direction: column;
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height:100vh;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index:1;
+			display: none;
+		}
+		nav ul li{
+			padding: 1px;
+		}
+		nav ul li a{
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			font-size: 1.05em;
+			text-transform: uppercase;
+			color: #ada8a8;
+		}
+		nav ul li a:hover{
+		color: #ffffff;
+		}
+		.toggle:before{
+			content: '\f0c9';
+			font-family: fontAwesome;
+			line-height: 30px;
+			z-index: 1;
+		}
+		.toggle.active:before{
+			content: '\f00d';
+			position: fixed;
+			right: 25px;
+			line-height: 0px;
+		}
+		 nav.active ul{
+			 display: flex !important;
+		 }
+		 .center{
+			font-size: 25px;	
+			text-align: center;
+		}
+		section{
+			width: 100%;
+			height: 100vh;
+			background-image: url('../Pics/shahul.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+		 .about-container{
+			 top: 0px;
+			 flex-direction: column;
+			 width: 90%;
+			 height: auto;
+			 padding: 30px 0px;
+			 align-items: center;
+		 }
+		 .copyright{
+			color: black;
+			font-size: 15px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			text-align: center;
+		}
+		 .about-text{
+			 width: 90%;
+			 text-align: center;
+		 }
+		 .services-text{
+			 width: 100%;
+		 }
+		 .contact-me{
+			 height: 180px;
+		 }
+		 .contact-me p{
+			 font-size: 18px;
+		 }
+		 .contact-me button{
+			 width: 150px;
+			 height: 33px;
+		 }
+		 .social-icons a{
+			width: 40px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #e6e3e3;
+			margin: 20px 10px;
+			border-radius: 50%;
+		}
+		.social-icons{
+			display: flex;
+		}
+		 .social-icons i{
+			color: #000000;
+			}
+			.social-icons a:hover,
+			.social-bar a:hover{
+			background-color: #000000;
+			box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+			transition:all ease 0.5s;
+			}
+			.social-icons a:hover i,
+			.social-bar a:hover i{
+			color: #FFFFFF;
+			transition: all ease 0.5s;
+			}
+			
+	}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PortFolio</title>
+<link rel="stylesheet" href="./Pages/style.css" type="text/css">
+	<!--Using-FontAwesome------>
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section>
+		<!--Navigation----->
+		<nav>
+			<!---logo---->
+			<a class="logo" href="index.html">Shahul Shane</a>
+			<!--menu-->
+			<ul>
+				<li><a href="index.html" class="active">PortFolio</a></li>
+				<li><a href="./Pages/contact.html" class="active">Contact Me</a></li>
+				
+			</ul>
+			<!--bars----------->
+			<div class="toggle"></div>
+		</nav>
+		<!--text--------->
+		<div class="text-container">
+			<p>Hello,</p>
+			<p>I'm Shahul Shane</p>
+			<p>A Youtuber<br> & Freelancer</p>
+			<button class="hire-btn"><a href="./Pages/contact.html" id="hire-btn">Hire Me</a></button>
+			<button class="chan"><a href="https://www.youtube.com/channel/UCT4dMQTmc7L_1LnUmoAhYUA" target="_blank" id="chan"> Visit Channel</a></button>
+		</div>
+		<!--model----->
+		<img src="./Pics/sha.jpg" class="me" alt="me">
+	</section>
+	<!---about-section------------->
+	<div class="about-container">
+		<!--img-------->
+		<img src="./Pics/sha1.jpg">
+		<!--about---------->
+		<div class="about-text">
+			<p>About Me</p>
+			<p>Developer & Designer</p>
+			<p>Hello, I am Shahul Hameed a.k.a Shahul Shane,I am a Developer and also a Designer. If you have any Project or if you want make a software for your business contact me.</p>
+			<p> You will reallly like my work, just give a try to young developer and you will get a satisfying result.</p>
+			<!--button----------->
+
+			<button><a href="./Pages/contact.html" id="hire">Hire Me</a></button>
+		</div>
+	</div>
+	<!--services--------->
+	<div class="services">
+	<!--text------------->
+	<div class="services-text">
+		<p>Services</p>
+		<p>If you want me to make a software for your business contact me. You reallly like my work, just give a try to young developer and you will get a satisfying result.</p>
+	</div>
+	<!--box---------------->
+	<div class="box-container">
+		<!--1----------------->
+		<div class="box-1">
+			<span>1</span>
+			<p class="heading">My Works</p>
+			<p class="details">Here's a website i built for displaying the projects works done by me, click the button below to see.</p>
+			<button><a href="https://shahul-shane.github.io/projects/" target="_blank" id="bot_chan">Works</a></button>
+		</div>
+		<!--2----------------->	
+		<div class="box-2">
+			<span>2</span>
+			<p class="heading">Youtube</p>
+			<p class="details">I have a youtube channel goes by Shahul Shane, Just give a visit and see my videos and if you really like those videos give a Thumbsup and Subscribe to my channel.</p>
+			<button><a href="https://www.youtube.com/channel/UCT4dMQTmc7L_1LnUmoAhYUA" target="_blank" id="bot_chan">Visit Channel</a></button>
+		</div>
+		<!--2----------------->
+		<div class="box-3">
+			<span>3</span>
+			<p class="heading">Web Design & Development</p>
+			<p class="details">You will get a classical software or website, You can try with young web Designer at low price with best result. If you have any project for your business contact me.</p>
+			<button class="hire-btn"><a href="./Pages/contact.html" id="hire-btn">Hire Me</a></button>
+		</div>
+		</div>
+	</div>
+	</div>
+		<!--contact me---------------->
+		<div class="contact-me">
+			<p>For Any Queries Regarding Project</p>
+			<button><a href="./Pages/contact.html" id="contact-color">Contact Me</a></button>
+		</div>
+<!--footer--------------->
+<footer>
+	<p>Follow me at,</p>
+	<!--social------------>
+	<div class="social-icons">
+		<a href="https://www.facebook.com/shahul.shane" target="_blank"><i class="fab fa-facebook-f"></i></a>
+		<a href="https://twitter.com/ShahulShane" target="_blank"><i class="fab fa-twitter"></i></a>
+		<a href="https://www.instagram.com/shahul.shane/" target="_blank"><i class="fab fa-instagram"></i></a>
+	</div>
+</footer>
+<!--copyright-------->
+<p class="copyright">Copyright &#169 2021 by Shahul Shane</p>
+<!--attached social bar-------->
+	<div class="social-bar">
+	<a href="https://www.facebook.com/shahul.shane" target="_blank"><i class="fab fa-facebook-f"></i></a>
+	<a href="https://twitter.com/ShahulShane" target="_blank"><i class="fab fa-twitter"></i></a>
+	<a href="https://www.instagram.com/shahul.shane/" target="_blank"><i class="fab fa-instagram"></i></a>
+	<a href="https://www.youtube.com/channel/UCT4dMQTmc7L_1LnUmoAhYUA" target="_blank"><i class="fab fa-youtube"></i></a>
+	</div>
+	<!---JQuery-------->
+<script type="text/javascript" src="./js/JQuery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('.toggle').toggleClass('active')
+			$('nav').toggleClass('active')
+		})
+	})
+	</script>
+	
+</body>
+</html>

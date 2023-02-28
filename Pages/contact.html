@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="./contact.css">
+<!--Using-FontAwesome------>
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+	<section>
+		<!--Navigation----->
+		<nav>
+			<!---logo---->
+			<a class="logo" href="../index.html">Shahul Shane</a>
+			<!--menu-->
+			<ul>
+				<li><a href="../index.html" class="active">PortFolio</a></li>
+				<li><a href="./contact.html" class="active">Contact Me</a></li>
+				
+			</ul>
+			<!--bars----------->
+			<div class="toggle"></div>
+		</nav>
+</div>
+</div>
+<span class=examp>
+	
+	<div class="container">
+		<div class="text"> Contact me </div>
+		<form action="https://formspree.io/f/xvodbdvv" method="POST" id="my-form"> 
+
+			<div class="form-row">
+				<div class="input-data">
+					<input type="text" name="fname" required>
+					<div class="underline"></div>
+						<label for="">First Name</label>
+				</div>
+				<div class="input-data">
+					<input type="text" name="sname" required>
+					<div class="underline"></div>
+						<label for="">Last Name</label>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="input-data">
+					<input type="text" name="email" required>
+					<div class="underline"></div>
+						<label for="">Email Address</label>
+				</div>
+				<div class="input-data">
+					<input type="text" name="subject" required>
+					<div class="underline"></div>
+						<label for="">Subject</label>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="input-data">
+				<input type="text" name="message" required>
+				<div class="underline"></div>
+				<label for="">Your message</label>
+				<div class="input-data textarea"></div>
+				<br>
+				<input type="submit" class="submitbut" name="submit" value="submit">
+			</form>
+	</div>
+	<div id="status"></div>
+</span> 
+
+
+
+<!--footer--------------->
+<footer>
+	<p>Reach me here,</p>
+	<!--social------------>
+	<div class="social-icons">
+		<a href="https://www.facebook.com/shahul.shane" target="_blank"><i class="fab fa-facebook-f"></i></a>
+		<a href="https://twitter.com/ShahulShane" target="_blank"><i class="fab fa-twitter"></i></a>
+		<a href="https://www.instagram.com/shahul.shane/" target="_blank"><i class="fab fa-instagram"></i></a>
+	</div>
+</footer>
+<!--copyright-------->
+	<p class="copyright">Copyright &#169 2021 by Shahul Shane</p>
+</section>
+<!---JQuery-------->
+<script type="text/javascript" src="../js/JQuery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('.toggle').toggleClass('active')
+			$('nav').toggleClass('active')
+		})
+	})
+	</script>
+</body>
+</html>
+
