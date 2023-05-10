@@ -87,6 +87,7 @@ font-size: 14px;
 outline: none;
 margin: 0px 10px;
 }
+
 .hire-btn{
 	border: 2px solid #373636;
 	color: #373636;
@@ -117,6 +118,7 @@ button:active{
 	transform: scale(1.1);
 }
 .me{
+	top: 50px;
 	height: 500px;
 	position: absolute;
 	bottom: 1px;
@@ -137,6 +139,7 @@ button:active{
 
 }
 .about-container img{
+	
 	height: 250px;
 }
 .about-text{
@@ -148,6 +151,7 @@ button:active{
 	font-weight: bold;
 	font-size: 23px;
 	line-height: 0px;
+	
 }
 .about-text p:nth-child(2){
 	color: #3e3d3d;
@@ -161,6 +165,8 @@ button:active{
 color: #7e7d7d;
 font-family: inherit;
 font-size: 16px;
+text-align: justify;
+	text-justify: inter-word;
 }
 .about-text button{
 	width: 120px;
@@ -191,7 +197,8 @@ font-size: 16px;
 	color: #3e3e3d;
 	font-size: 15px;
 	line-height: 20px;
-
+	text-align: justify;
+	text-justify: inter-word;
 }
 .services-text p:nth-child(3){
 	font-family: serif;
